@@ -16,15 +16,26 @@ public class AccessElementsFromArrayListExample {
 		System.out.println("Is the topProgrammingLanguages list empty? :"
 				+topProgrammingLaguages.isEmpty());
 		
-		topProgrammingLaguages.add("C");
-		topProgrammingLaguages.add("Java");
-		topProgrammingLaguages.add("C++");
-		topProgrammingLaguages.add("Python");
-		topProgrammingLaguages.add(".net");
+		topProgrammingLaguages.add("C");     //0
+		topProgrammingLaguages.add("Java");  //1
+		topProgrammingLaguages.add("C++");   //2
+		topProgrammingLaguages.add("Python");//3
+		topProgrammingLaguages.add(".net");  //4
 		
 		//Find the size of an ArrayList
 		 System.out.println("Here are the top" + topProgrammingLaguages.size()
 		                    + "Programming Languages in the world");
+		 
+		 // Retrieve the element at a given index
+		    String bestProgrammingLang = topProgrammingLaguages.get(1);
+		    System.out.println("bestProgrammingLang => " + bestProgrammingLang);
+		    
+		    String secondBestProgrammingLang = topProgrammingLaguages.get(3);
+		    System.out.println("secondBestProgrammingLang =>" +secondBestProgrammingLang);
+		    
+		 // Modify the element at a given index
+		    topProgrammingLaguages.set(4,"C#");
+		    System.out.println(topProgrammingLaguages);
 	 
 
 	}
