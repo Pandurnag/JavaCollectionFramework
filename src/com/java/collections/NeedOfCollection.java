@@ -1,5 +1,9 @@
 package com.java.collections;
 
+import java.awt.print.Book;
+
+import com.java.collections.hashmap.Student;
+
 public class NeedOfCollection {
 
 	public static void main(String[] args) {
